@@ -1,0 +1,52 @@
+function loadContact() {
+    const title = document.createElement("h1");
+    const image = document.createElement("img");
+    const description = document.createElement("p");
+    const form = document.createElement("form");
+    form.id = "form";
+    const label1 = document.createElement("label");
+    const label2 = document.createElement("label");
+    const label3 = document.createElement("label");
+    const label4 = document.createElement("label");
+    const input1 = document.createElement("input");
+    const input2 = document.createElement("input");
+    const input3 = document.createElement("input");
+    const input4 = document.createElement("textarea");
+    const field1 = document.createElement("div");
+    const field2 = document.createElement("div");
+    const field3 = document.createElement("div");
+    const field4 = document.createElement("div");
+    label1.textContent = "Name: ";
+    // label1.setAttrubute("for", "name");
+    label2.textContent = "E-mail: ";
+    // label2.for = "email";
+    label3.textContent = "Phone: ";
+    // label3.for = "phone";
+    label4.textContent = "Message: ";
+    // label4.for = "message";
+    input1.type = "text";
+    input1.id = "name";
+    input2.type = "email";
+    input2.id = "email";
+    input3.type = "text";
+    input3.id = "phone";
+    input4.id = "message";
+    field1.appendChild(label1);
+    field1.appendChild(input1);
+    field2.appendChild(label2);
+    field2.appendChild(input2);
+    field3.appendChild(label3);
+    field3.appendChild(input3);
+    field4.appendChild(label4);
+    field4.appendChild(input4);
+    form.appendChild(field1);
+    form.appendChild(field2);
+    form.appendChild(field3);
+    form.appendChild(field4);
+    title.textContent = "We look forward to serving you soon";
+    image.src = "images/contact.jpg";
+    description.textContent = "Any comments or suggestions? Send us a direct message. Or drop in to one of our many nationwide restaurants.";
+    return [title, image, description, form];
+}
+
+export { loadContact }

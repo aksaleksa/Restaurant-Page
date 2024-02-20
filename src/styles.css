@@ -1,0 +1,102 @@
+* {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    background-color: #fafafa;
+}
+
+nav {
+    height: 100px;
+    background-color: #c4c1e0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+nav button {
+    border: none;
+    padding: 15px;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    background-color: #7c73e6;
+}
+
+nav button:hover {
+    cursor: pointer;
+    background-color: rgb(88, 161, 230);
+    transition: all 0.7s ease;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+img {
+    display: block;
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+}
+
+p {
+    font-size: 20px;
+    text-align: center;
+    margin: 30px auto;
+}
+
+.menu {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    margin: 20px auto 50px auto;
+    padding: 20px;
+    background-color: #ffe9e3;
+    border-radius: 10px;
+}
+
+.menu div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.menu img {
+    width: 300px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.menu p {
+    font-size: 20px;
+    margin: 0;
+}
+
+#form {
+    width: 40%;
+    margin: 20px auto 50px auto;
+    padding: 20px;
+    background-color: #ffe9e3;
+}
+
+#form div {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: start;
+    margin: 20px auto 0 auto;
+}
+
+#form input, #form textarea {
+    width: 60%;
+}

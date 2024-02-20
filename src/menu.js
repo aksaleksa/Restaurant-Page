@@ -1,0 +1,61 @@
+function loadMenu() {
+    const title = document.createElement("h1");
+    const headline = document.createElement("p");
+    const menu = document.createElement("div");
+    title.textContent = "Dishes to suit every taste";
+    headline.textContent = "Take your time to browse the selection of mouth-watering dishes on offer."
+    menu.classList.add("menu");
+    const meal1 = document.createElement("div");
+    const meal2 = document.createElement("div");
+    const meal3 = document.createElement("div");
+    const meal4 = document.createElement("div");
+    const meal5 = document.createElement("div");
+    const imgHolder1 = document.createElement("div");
+    const imgHolder2 = document.createElement("div");
+    const imgHolder3 = document.createElement("div");
+    const imgHolder4 = document.createElement("div");
+    const imgHolder5 = document.createElement("div");
+    const image1 = document.createElement("img");
+    const image2 = document.createElement("img");
+    const image3 = document.createElement("img");
+    const image4 = document.createElement("img");
+    const image5 = document.createElement("img");
+    const paragraph1 = document.createElement("p");
+    const paragraph2 = document.createElement("p");
+    const paragraph3 = document.createElement("p");
+    const paragraph4 = document.createElement("p");
+    const paragraph5 = document.createElement("p");
+    paragraph1.textContent = "Everyone's favourite. Fresh pizza dough is made each day. Choose from a wide range of delicious toppings made from locally sourced ingredients.";
+    paragraph2.textContent = "If you prefer something healthier, our cooks will prepare one of our signature mouth-watering pasta dishes with everything from seafood to vegetables.";
+    paragraph3.textContent = "Carnivores are welcome too. What can be better than a sizzling seasoned cut of meat cooked to perfection?";
+    paragraph4.textContent = "After your main meal, why not sample some of our homemade cheesecake? Its deliciously sweet taste and ideal mix of soft and crunchy textures will keep you coming back.";
+    paragraph5.textContent = "Why not end your evening with a scoop or two of our refreshing ice cream? You've earned it.";
+    image1.src = "images/image1.jpg";
+    image2.src = "images/image2.jpg";
+    image3.src = "images/image3.jpg";
+    image4.src = "images/image4.jpg";
+    image5.src = "images/image5.jpg";
+    imgHolder1.appendChild(image1);
+    imgHolder2.appendChild(image2);
+    imgHolder3.appendChild(image3);
+    imgHolder4.appendChild(image4);
+    imgHolder5.appendChild(image5);
+    meal1.appendChild(imgHolder1);
+    meal1.appendChild(paragraph1);
+    meal2.appendChild(imgHolder2);
+    meal2.appendChild(paragraph2);
+    meal3.appendChild(imgHolder3);
+    meal3.appendChild(paragraph3);
+    meal4.appendChild(imgHolder4);
+    meal4.appendChild(paragraph4);
+    meal5.appendChild(imgHolder5);
+    meal5.appendChild(paragraph5);
+    menu.appendChild(meal1);
+    menu.appendChild(meal2);
+    menu.appendChild(meal3);
+    menu.appendChild(meal4);
+    menu.appendChild(meal5);
+    return [title, headline, menu];
+}
+
+export { loadMenu }
